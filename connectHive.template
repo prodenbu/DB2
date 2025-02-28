@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+beeline -u "jdbc:hive2://IPADDR:10000/"

@@ -15,4 +15,10 @@ fi
 if [[ ! -e hbase-2.6.1-bin.tar.gz ]]; then
 wget https://dlcdn.apache.org/hbase/2.6.1/hbase-2.6.1-bin.tar.gz
 fi
+if [[ ! -e protobuf-28.3.tar.gz ]]; then
+wget https://github.com/protocolbuffers/protobuf/releases/download/v28.3/protobuf-28.3.tar.gz
+fi
+if [[ ! -e apache-tez-0.10.3-bin.tar.gz ]]; then
+wget https://dlcdn.apache.org/tez/0.10.3/apache-tez-0.10.3-bin.tar.gz
+fi
 docker image build -t db2 .

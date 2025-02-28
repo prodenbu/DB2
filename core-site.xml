@@ -3,4 +3,13 @@
         <name>fs.defaultFS</name>
         <value>hdfs://localhost:9000</value>
     </property>
+		<property>
+      <name>hadoop.proxyuser.user.groups</name>
+      <value>*</value>
+    </property>
+ 
+    <property>
+      <name>hadoop.proxyuser.user.hosts</name>
+      <value>*</value>
+    </property>
 </configuration>
